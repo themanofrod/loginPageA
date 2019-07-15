@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Login Page</title>
+</head>
+<body>
+	<nav class="navigation">
+		<ul>
+			<li class="logo"><i class="fas fa-rocket"></i> the rocket</li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
+	<main class="main-content">
+		<div class="landing-container">
+			<div class="welcome">
+				<h1>Welcome</h1>
+				<button class="btn btn-primary-color" id="login">login</button>
+				<br>
+				<button class="btn btn-secondary-color" id="register">register</button>
+			</div>
+			<div class="login">
+				<h1>Sign In</h1>
+				<form class="form" id="login-form">
+					<input type="email" name="email" placeholder="Email Address" required>
+					<br>
+					<input type="password" name="password" placeholder="Password" required>
+					<br>
+					<input type="submit" name="login" value="login" class="btn btn-primary-color" id="login-btn">
+				</form>
+				<button class=" btn primary-color" id="reset">reset password</button>
+			</div>
+			<div class="register">
+				<h1 class="secondary-color">Register Account</h1>
+				<form class="form" id="register-form">
+					<input type="text" name="name" placeholder="Name" required>
+					<br>
+					<input type="email" name="email" placeholder="Email Address" required>
+					<br>
+					<input type="password" name="password" placeholder="Password" minlength="8" required>
+					<br>
+					<input type="submit" name="register" value="Register" class="btn btn-secondary-color" id="register-btn">
+				</form>
+			</div>
+			<div class="password-reset">
+				<h1>Password Reset</h1>
+				<form class="form" id="password-form">
+					<input type="email" name="email" placeholder="Email Address" required>
+					<br>
+					<input type="email" name="email-confirmation" placeholder="Confirm Email Address" required>
+					<br>
+					<input type="submit" name="Submit" value="Submit" class="btn btn-secondary-color" id='password-reset-btn'>
+				</form>
+			</div>
+			<div id="back-btn">
+				<i class="fas fa-long-arrow-alt-left fa-2x"></i>
+			</div>
+		</div>
+	</main>
+	<div class="modals hide">
+		<div class="modal register-modal hide">
+			<h1>Registered</h1>
+			<p>Activation email sent.</p>
+			<br>
+			<p>Please active account before trying to login.</p>
+		</div>
+		<div class="modal reset-modal hide">
+			<h1>Email Sent</h1>
+			<p>Password Reset email sent.</p>
+			<br>
+			<p>Please check email for further instructions.</p>
+		</div>
+	</div>
+	<footer class="footer">
+		<ul>
+			<li><a href="#">Support</a></li>
+			<li><a href="#">Terms of Use</a></li>
+		</ul>
+	</footer>
+	<script src="main.js"></script>
+</body>
+</html>
